@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+    $(document).on("mobileinit", function () {
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+		$.mobile.changePage.defaults.changeHash = false;
+		$.mobile.defaultPageTransition = 'none';
+    });
+</script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/jquery.ui.datepicker.js"></script>
+<script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js"></script>
+<!--datepicker-->
+<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+<!--datepicker end-->
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
+<link href='css/mobil.css' rel='stylesheet' type='text/css'>
+<style>
+.ui-mobile label, div.ui-controlgroup-label{
+  font-weight: bold;
+  font-size: 19px;
+  font-family: Roboto;
+	
+}
+</style>
+</head>
+<body>
+<!--main page-->
+<div data-role="page" id="success_page" class="bav">    
+<!--navbar -->   
+<div data-role="navbar" data-grid="c" data-theme="e">
+    <ul>
+        <li class="nav" id="success_logo"><a href="#"  ><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nava" id="success_employee_name"></li>
+        <li class="navb" id="success_employee_id"></li>
+        <li class="navc"><a href="#overlayPanel_profile"> 
+        <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
+    </ul>
+</div><!-- /navbar end-->
+
+<!--panel slider-->
+<div data-role="panel" id="overlayPanel_profile" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
+      <ul data-role="listview" data-inset="true">
+      <li id="success_profile"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left"><span class="ww">My Profile</span></a></li>
+      <li id="success_create"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" ><span class="ww">Create LPA</span></a></li>
+      <li id="success_update"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" id="lpa_update_two"><span class="ww">Update LPA</span></a></li>
+     <!-- <li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Reports</a></li>-->
+      </ul>
+      <a href="#" id="success_signout" class="ui-btn ui-icon-power ui-btn-icon-left"><span class="ww si">Sign Out</span></a>
+</div> <!--page slider end-->
+
+<!--content page-->
+<div data-role="main" class="ui-content">
+  <script src="js/profile.js"></script>
+  <p class="cen4"><span class="ww">My Profile</span> </p>
+  
+  <div class="ui-grid-solo baf">
+      <div class="ui-block-a">
+  <p class="ui-bar ui-bar-a cen5" id="profile_empid"> Thanks for the audit</p>  
+ 
+
+     </div>
+</div>
+<!--3rd drop down end-->
+
+</div><!--content div end-->
+
+<div data-role="footer"><!--footer-->
+  
+<marquee>LPA Tool by Service Center India</marquee>
+</div>  <!--footer end-->
+</div> <!---main div page-->
+</body>
+</html>

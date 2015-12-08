@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+	.ui-corner-all {
+ 	  -webkit-border-radius:.0 !important;
+   		border-radius: 0 !important;
+	}
+	.ui-input-text {
+		color:#FFF;	
+
+		
+	}
+	.form_left_div{
+		float:left;
+		width:17%;
+		height:auto;
+		text-align:right;
+		padding-top:6px;
+		
+	}
+	.form_right_div{
+		float:left;
+		width:83%;
+		height:auto;
+		margin-left:-1px;
+		opacity:0.14;
+	}
+	.button_left_div{
+		float:left;
+		width:12%;
+		height:auto;
+	 } 
+	.button_right_div{
+		float:left;
+		width:88%;
+		height:auto;
+	 } 
+	 ::-webkit-input-placeholder {
+   		color: white;
+	 }
+	:-moz-placeholder { /* Firefox 18- */
+   		color: red;  
+	}
+	::-moz-placeholder {  /* Firefox 19+ */
+	   color: red;  
+	}
+	:-ms-input-placeholder {  
+   		color: red;  
+	}
+
+	
+

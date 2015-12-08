@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--datepicker-->
+<script src="js/jquery.ui.datepicker.js"></script>
+<script id="mobile-datepicker" src="js/jquery.mobile.datepicker.js"></script>
+<link rel="stylesheet" href="css/jquery.mobile.datepicker.css">
+<!--datepicker end-->
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
+<link href='css/mobil.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<!--main page-->
+<div data-role="page" id="pageone">
+<!--navbar -->   
+<div data-role="navbar" data-grid="c" data-theme="e">
+    <ul>
+        <li class="nav"><a href="#" ><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nava">Employee Name</li>
+        <li class="navb">Personal ID</li>
+        <li class="navc"><a href="#overlayPanel">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
+    </ul>
+</div><!-- /navbar end-->
+
+<!--panel slider-->
+<div data-role="panel" id="overlayPanel" data-display="overlay" data-position="right"> 
+      <ul data-role="listview" data-inset="true">
+      <li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left"><span class="ww">My Profile</span></a></li>
+      <li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left"><span class="ww">Create LPA</span></a></li>
+      <li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left"><span class="ww">Update LPA</span></a></li>
+      <li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Reports</a></li>
+      </ul>
+      <a href="index.html" class="ui-btn sio ui-icon-power ui-btn-icon-left"><span class="ww si">Sign Out</span></a>
+</div> <!--page slider end-->
+
+<!--content page-->
+<div data-role="main" class="ui-content">
+  <p class="cen">General Topics</p>
+  <hr>
+  <p class="cen">Are all actions of previous layered audits closed or documented online RPS?</p>
+
+<!--checkbox-->
+<div class="ui-grid-b ">
+      <div class="ui-block-a  ">
+      <label class="fla">Yes:</label><input type="checkbox">
+      </div>
+      <div class="ui-block-b ">
+      <label class="fla" >No:</label>
+      <input type="checkbox"><br>
+      </div>
+      <div class="ui-block-c ">
+      <label class="fla">N/A:</label>  
+      <input type="checkbox"><br>
+      </div>
+</div><!--checkbox end-->
+<hr class="hr">
+
+<!--textarea-->
+<label for="textarea-1">Textarea:</label>
+<textarea name="textarea-1" id="" placeholder="Findings"></textarea>
+<!--textarea end-->
+
+<!--1st drop down-->
+<label for="select-choice-1" class="select">Responsibility</label>
+<select name="select-choice-1" id="">
+    <option value="standard">Standard: 7 Days</option>
+    <option value="rush">Rush: 3 Days</option>
+    <option value="express">Express: Next Day</option>
+    <option value="overnight">Overnight</option>
+</select><br>
+<!--first dropdown end-->
+
+<!--date-->
+  <div class="ui-grid-a">
+    <div class="ui-block-a calb">
+    <label>Date</label>
+    <input type="text" data-role="date">
+    </div>
+    <div class="ui-block-b cal">
+      <!--<img src="images/calendar.png" alt="Click to popup the clendar!" onclick="alert('Popup some calendar here!');" />-->  <!--calendar img-->
+    </div>
+  </div>
+<!---date end-->
+
+</div><!--content div end-->
+   <div class="cena">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow but">NEXT</a><br>
+    </div>
+<hr>
+<div data-role="footer"><!--footer-->
+<marquee>LPA Tool by Service Center India</marquee>
+</div><!--footer div end-->
+</div> <!--main page end-->
+</body>
+</html>

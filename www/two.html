@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
+<link href='css/mobil.css' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!--main page-->
+<div data-role="page" id="pagetwo">
+
+<script src="js/two.js"></script>
+<div data-role="navbar" data-grid="c" data-theme="e" class="fix">
+    <ul>
+        <li class="nav" ><a href="#" ><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nava foon2" id="emplyee_name_two">Employee Name</li>
+        <li class="navb foon2" id="emplyee_id_two">Personal ID</li>
+        <li class="navc"><a href="#overlayPanel">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
+    </ul>
+</div><!-- /navbar end-->
+<!--slide panel menu-->  
+<div data-role="panel" id="overlayPanel" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
+      <ul data-role="listview" data-inset="true">
+      <li id="pagetwo_profile"><a href="profile.html" class="ui-btn ui-icon-carat-l ui-btn-icon-left "><span class="ww">My Profile</span></a></li>
+      <li id="pagecreate_two"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left"   ><span class="ww">Create LPA</span></a></li>
+      <li id="lpa_update_one"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" ><span class="ww">Update LPA</span></a></li>
+     <!-- <li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Reports</a></li>-->
+      </ul>
+    <a href="#" id="two_signout" class="ui-btn sio ui-icon-power ui-btn-icon-left"><span class="ww si">Sign Out</span></a>
+</div> 
+<!--slide panel menu end-->  
+
+<!--content page-->
+<div data-role="main" class="ui-content confi">
+<div class="ui-grid-solo">
+<div class="ui-block-a hei" >
+
+</div>
+</div>
+<div class="ui-grid-solo">
+<div class="ui-block-a" >
+
+<h2 class="cen">Dear Auditor,</h2>
+<hr>
+<p class="about">
+This is the Layered Process Audit Mobile Application which is planned to be tested and used for LPA audits, at this phase we are just moving from the paper work to electronic, user friendly way to fill the LPA questionnaire. 
+</p>
+<p class="about">
+Once this phase is approved, we would move to 2nd phase of report and work flows for reminders and checks for pending action items for each plants.
+</p>
+<p class="about">
+Thanks for testing and providing feedback. 
+</p>
+<hr>
+<p class="about">
+For any queries please contact Mr Anand Kushwaha via email anand.kushwaha@mann-hummel.com
+</p>
+<br>
+</div>
+</div>
+<div class="cena">
+ <a href="#mpopup" data-rel="popup" data-position-to="window" data-transition="flip" class="ui-btn fed" >Feedback</a>
+</div>
+ <div data-role="popup" id="mpopup" class="bam">
+     <form method="post" name="feedback_form" id="feedback_form" action="#">
+<label for="feedback" class="yel">Share your feedback</label>
+<textarea name="feedback" id="feedback" class="wi" placeholder="How can we help you?"></textarea>
+<div class="cena">
+<a href="#" class="ui-btn butms" id="feedback_submit" data-rel="back">Submit</a>
+</div>
+ </form>
+    </div>
+<br>
+</div><!--content page end-->
+<!--footer-->
+<div data-role="footer" class="fixf fofi"><!--footer-->
+<marquee>LPA Tool by Service Center India</marquee>
+
+</div>  <!--footer end-->
+</div> <!--main page end-->
+</body>
+</html>

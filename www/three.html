@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
+<link href='css/mobil.css' rel='stylesheet' type='text/css'>
+<style type="text/css">
+		
+		input {
+			margin: 2em 0;
+		}
+	</style>
+<link href="css/mobipick.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="demo/shCore.js"></script>
+
+
+</head>
+<body>
+<!--main page-->
+<div  data-role="page" id="pagethree">  
+<div data-role="navbar" data-grid="c" data-theme="e" class="fix">
+    <ul>
+        <li class="nav" ><a href="#" id="three_logo"><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nava foon2" id="employee_name_three">Employee Name</li>
+        <li class="navb foon2" id="employee_id_three">Personal ID</li>
+        <li class="navc"><a href="#overlayPanel_three">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
+    </ul>
+</div><!-- /navbar end-->  
+
+<!--panel slider-->
+<div data-role="panel" id="overlayPanel_three" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
+      <ul data-role="listview" data-inset="true">
+      <li><a href="#" id="page_three_profile" class="ui-btn ui-icon-carat-l ui-btn-icon-left" data-ajax="false" ><span class="ww">My Profile</span></a></li>
+     <li><a href="#" id="three_update" class="ui-btn ui-icon-carat-l ui-btn-icon-left"><span class="ww">Update LPA</span></a></li> 
+      </ul>
+      <a href="#" id="three_signout" class="ui-btn sio ui-icon-power ui-btn-icon-left"><span class="ww sicreate">Sign Out</span></a>
+</div> <!--page slider end-->
+
+<!--content page-->
+<div data-role="main" class="ui-content confithree" >
+<script src="js/three.js"></script>
+  <script type="text/javascript" src="js/mobipick.js"></script>
+   <script type="text/javascript" src="external/xdate.js"></script> 
+
+<!--1st drop down-->
+<h3 class="ui-bar ui-bar-a texsc tese" >Create LPA</h3>
+<label class="cen">Region</label>
+<select name="region" id="region" class="drof">
+    <option value="0">Select Region</option>
+</select>
+<label class="cen">Company</label>
+<select name="country" id="country" class="drof" >
+    <option value="0">Select Country</option> 
+</select>
+<label class="cen">Location</label>
+<select name="plant_name" id="plant_name" class="drof" >
+    <option value="0">Select Plant</option>
+</select>
+
+<label class="">Part Number</label>
+<input type="text" name="partno" id="partno" placeholder="Part Number" class="dar" />
+<label class="">Date</label>
+<div id="demo">
+<div class="demo">				
+<input type="text" readonly="readonly" placeholder="Date" class="dar"/>
+</div>
+</div>
+<br>
+<label class="cen">Shift</label>
+<select name="shift" id="shift" class="drof">
+    <option value="0">Select Shift</option>
+    <option value="1">Shift 1</option>
+    <option value="2">Shift 2</option>
+    <option value="3">Shift 3</option>
+</select>
+<!--3rd drop down end-->
+ <div  data-role="popup" id="popupcreatelpa" data-transition="pop" data-overlay-theme="a" class="bam">
+      <p class="yellow">Please check whether you have filled plant name, partno and shift</p>
+      <a href="#" data-rel="back"> <button type="submit"  class="ui-btn butms" >Ok</button></a>
+  </div>
+
+</div><!--content div end-->
+<div class="cena"><!--next button-->
+<button class="ui-btn butmmas" id="next1">Next</button>
+<!--  <a href="#" class="ui-btn ui-corner-all ui-shadow  butmmas" id="next1">NEXT</a><br> -->
+</div><!--next button end-->
+<br>
+<br>
+<br>
+<!--footer-->
+<div data-role="footer" class="fofi">
+<marquee>LPA Tool by Service Center India</marquee>
+</div>  
+<!--footer end-->
+</div> <!---main div page-->
+</body>
+</html>

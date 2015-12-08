@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+    $(document).on("mobileinit", function () {
+        $.mobile.hashListeningEnabled = false;
+        $.mobile.pushStateEnabled = false;
+		$.mobile.changePage.defaults.changeHash = false;
+		$.mobile.defaultPageTransition = 'none'
+    });
+</script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<style type="text/css">
+     .ui-page { 
+-webkit-backface-visibility: hidden; 
+}
+</style>
+<!--datepicker-->
+<!--datepicker end-->
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
+<link href='css/mobil.css' rel='stylesheet' type='text/css'>
+<style >
+.ui-mini.ui-mini-smaller .ui-btn-inner {
+    font-size: 10px;
+    padding: .45em 10px .4em;
+}
+</style>
+
+</head>
+<body>
+<!--main page-->
+<div data-role="page" id="page_five">   
+<script src="js/five.js"></script>
+<style type="text/css">
+    input {
+      margin: 2em 0;
+    }
+  </style>
+  <link href="css/mobipick.css" rel="stylesheet" type="text/css" />
+<!-- <script type="text/javascript" src="demo/shCore.js"></script> -->
+<!-- <script type="text/javascript" src="external/xdate.js"></script> -->
+  <script type="text/javascript" src="js/mobipicka.js"></script>
+        
+<!--navbar-->   
+<div data-role="navbar" data-grid="c" data-theme="e" class="fix">
+    <ul>
+        <li class="nav" id="five_logo"><a href="#" ><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nava foon2" id="emplyee_name_five">Employee Name</li>
+        <li class="navb foon2" id="emplyee_id_five">Personal ID</li>
+        <li class="navc"><a href="#overlayPanel_five">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
+    </ul>
+</div><!-- /navbar end-->
+<!--panel slider-->
+<div data-role="panel" id="overlayPanel_five" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
+      <ul data-role="listview" data-inset="true">
+      <li id="page_five_profile"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" ><span class="ww">My Profile</span></a></li>
+      <li id="page_five_create"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left"><span class="ww">Create LPA</span></a></li>
+      <li id="page_five_update"><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left" ><span class="ww">Update LPA</span></a></li>
+      <!--<li><a href="#" class="ui-btn ui-icon-carat-l ui-btn-icon-left">Reports</a></li>-->
+      </ul>
+      <a href="#" id="five_signout" class="ui-btn ui-icon-power ui-btn-icon-left"><span class="ww si">Sign Out</span></a>
+</div> <!--panel slider end-->
+  <form method="post" data-ajax="false" action="#" id="lpaform">
+  <input type="hidden" name="activityval" id="activityval" >
+  <input type="hidden" name="checkboxval" id="checkboxval" >
+  <input type="hidden" name="responsibleval" id="responsibleval" >
+  <input type="hidden" name="findingsval" id="findingsval" >
+  <input type="hidden" name="datepickerval" id="datepickerval" >
+  <input type="hidden" name="plant_id" id="plant_id" >
+  <input type="hidden" name="part_id" id="part_id" >
+  <input type="hidden" name="shift" id="shift" >
+  <input type="hidden" name="user_id" id="user_id" >
+    <input type="hidden" name="country" id="country" >
+  <input type="hidden" name="region" id="region" >              
+<div data-role="main" class="ui-content poda" id="pagination">
+ <h3 class="ui-bar ui-bar-a texsb" >Create LPA</h3>
+</form></div>
+ <div class="ui-grid-a  wii">
+      <div class="ui-block-a">
+      <a href="#" class="ui-btn ui-corner-all ui-shadow but" id="prev1" >PREVIOUS</a><br>
+      </div>
+  <div class="ui-block-b">
+        <a href="#" id="next6" class="ui-btn ui-corner-all ui-shadow but">NEXT</a><br>
+  </div>
+  </div>
+  <!--prev next button end-->
+  <!--SUBMIT BUTTON-->
+  <!-- <div class="cena">
+        <a href="#" class="ui-btn ui-corner-all ui-shadow but "   id="lpa_create">SUBMIT</a><br>
+    </div>
+  <div  data-role="popup" id="basic" data-transition="pop" data-overlay-theme="a" class="bam">
+            <p class="yellow">Thank you for the audit</p>
+           <a href="two.html" data-rel="back"> <button type="submit"  class="ui-btn butms" >Ok</button></a>
+  </div> -->
+<!--prev next button-->
+  <div class="cena">
+ <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow but "  id="lpa_create">SUBMIT</a>
+ </div>
+<br>
+  <div data-role="popup" id="basic"  class="bam">
+      <p class="yellow">Thank you for the audit</p>
+    <a href="#" class="ui-btn butms" id="tw" data-rel="back">Ok</a>
+      </div>
+ <br><br><br>
+ <div data-role="footer" class="fofi">
+<marquee>LPA Tool by Service Center India</marquee>
+</div> 
+</div><!--content div end-->
+  </div> <!---main div page end-->
+
+</body>
+</html>

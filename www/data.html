@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQueryMobile - DateBox Demos</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css" />
+    <link rel="stylesheet" href="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.min.css" />
+    <link type="text/css" href="css/demos.css" rel="stylesheet" />
+    <!-- NOTE: Script load order is significant! -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+    
+    
+    <script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.core.min.js"></script>
+    
+    
+    <script type="text/javascript" src="http://cdn.jtsage.com/datebox/1.4.4/jqm-datebox-1.4.4.mode.flipbox.min.js"></script>
+    
+    <script type="text/javascript">
+    jQuery.extend(jQuery.mobile,
+    {
+      ajaxEnabled: false
+    });
+  
+    </script> 
+  </head>
+  <body>
+  
+    <div data-role="page" id="main" align="center" style="width:100px;" >     
+    
+      <center>
+          
+            <label for="mode7">TimeFlipBox</label>
+            <input name="mode7" id="mode7" type="text" data-role="datebox" data-options='{&quot;mode&quot;:&quot;flipbox&quot;}' readonly=true />
+         </center>
+       
+    </div>
+</html>

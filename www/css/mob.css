@@ -1,0 +1,134 @@
+ /*mobile view*/
+ @media only screen and (max-width:480px){
+.nav{
+	width:20% !important;
+	margin-top: -8px;
+	
+}
+.nava{
+	margin-top:10px!important;
+	margin-bottom:10px;
+		width:30% !important;
+		margin-left: 10px !important;
+		font-family: roboto;
+		font-size: 15px;
+
+}
+.navb{
+	margin-top:10px!important;
+		margin-bottom:10px;
+		width:30% !important;
+		font-family: roboto;
+		font-size: 15px;
+}
+.navc{
+	margin-top:20px!important;
+		width:10% !important;
+}
+.im{
+	margin-left: -10px !important;
+}
+
+
+
+.foj{
+color: white;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    
+
+text-shadow: none !important;
+position: absolute;
+left: 15%;
+right: 15%;
+}
+.button_right_div{
+	position: absolute;
+bottom: 60px;
+margin-left: 10px;
+margin-right: 10px;
+}
+.ui-content{
+	margin-top: 30px;
+	width: 100%;
+}
+.form_left_div{
+	margin-left: -25px;
+}
+.form_right_div{
+	width: 86%;
+}
+#imgdiv{
+	margin-bottom: 30px;
+}
+.ui-shadow{
+	box-shadow:none;
+}
+.ui-btn-up-f{
+	border:none;
+}
+#div-with-bg_img{
+	 background-image: url("../images/login-bg.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+.ui-btn-hover-f{
+	background:linear-gradient(#259353, #259353) repeat scroll 0% 0% #090;
+	color:white;
+	text-shadow: 0px 1px 1px #111;
+}
+}
+
+
+
+ /*tablet*/
+ @media only screen and (max-width:768px){
+ 	#div-with-bg_img{
+	 background-image: url("../images/login-bg.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+.foj{
+color: white;
+margin-left: 25%;
+margin-right: 20%;
+text-shadow: none !important;
+position: absolute;
+left: 15%;
+right: 15%;
+}
+#imgdiv{
+	margin-bottom: 30px;
+}
+.form_left_div{
+	margin-left: -25px;
+}
+.button_left_div {
+    float: left;
+    width: 8%;
+    height: auto;
+}
+
+}
+
+ /*desktop*/
+ @media only screen and (max-width:992px){
+ 		#div-with-bg_img{
+	 background-image: url("../images/login-bg.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+.foj{
+display:;
+}
+}
+
+ @media only screen and (max-width:1800px){
+
+#div-with-bg_img{
+	 background-image: url("../images/login-bg.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+ 	}

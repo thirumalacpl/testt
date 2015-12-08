@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
+<link href='css/mobil.css' rel='stylesheet' type='text/css'>
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+    $(document).on("mobileinit", function () {
+        /*$.mobile.hashListeningEnabled = false;
+         $.mobile.pushStateEnabled = false;
+	 $.mobile.changePage.defaults.changeHash = false;*/
+
+    });
+</script>
+
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script type="text/javascript" src="js/index.js">	</script>
+
+</head>
+
+<body>
+<!--main page-->
+<div data-role="page" id="pageone" class="bg">
+<!--content page-->
+<div data-role="main" class="ui-content">
+<!---img logo -->
+<div class="ui-grid-solo">
+      <div class="ui-block-a loc">
+      <img src="images/logo.png">
+      </div>
+</div>
+<!---img logo end-->
+<!--space gap-->
+<div class="ui-grid-solo">
+      <div class="ui-block-a">&nbsp;</div>
+</div>
+<div class="ui-grid-solo">
+      <div class="ui-block-a">&nbsp;</div>
+</div>
+<div class="ui-grid-solo">
+      <div class="ui-block-a">&nbsp;</div>
+</div>
+<!--space gap end-->
+
+<!--form-->
+<form method="post" action="" id="check-user">	
+ <div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <input type="text" name="username" class="loginp " id="username" placeholder="Username" data-theme="a" >
+      </div>
+</div>
+
+
+<div class="ui-grid-solo">
+      <div class="ui-block-a">
+        <input type="password" name="password" class="loginp " id="password" placeholder="Password" data-theme="a">
+      </div>
+</div>
+    
+
+
+
+<div class="ui-grid-solo">
+      <div class="ui-block-a">
+      <div class="cena">
+      <button class="ui-btn butmmas" id="submit">LOG IN</button>
+      </div>
+      </form><!--form end-->
+      <!--<a href="#popupLogin"><label class="al">Forgot Your Password?</label></a>-->
+<div class="ui-grid-solo">
+<div class="ui-block-a">&nbsp;</div>
+</div>
+   <a href="#popupLogin" data-rel="popup" data-position-to="window" class="ui-btn ui-corner-all ui-shadow butk" data-transition="pop">Forgot Your Password?</a>
+	  
+      </div>
+</div>
+
+
+
+<!--space gap-->
+<div class="ui-grid-solo">
+<div class="ui-block-a">&nbsp;</div>
+</div>
+<!--space gap end-->
+</div><!--content end-->
+
+
+<div data-role="popup" id="popupLogin"  class="sigpop" data-theme="a" class="ui-corner-all">
+    <form method="post" name="forgot" id="forgot">
+        <div style="padding:10px 10px;">
+            <h3 class="hed">Kindly fill these details</h3>
+            <label for="un" class="ui-hidden-accessible">Username:</label>
+            <input type="text" name="username1" class="whit mg" id="username1" value="" placeholder="Username" data-theme="a">
+            <label for="pw" class="ui-hidden-accessible">Contact Number:</label>
+            <input type="text" name="contactnumber" class="whit mg" id="contact number" value="" placeholder="Contact number" data-theme="a">
+
+            <textarea name="information" id="information"  class="whit bv mg wi shad" placeholder="Information" data-theme="a"></textarea>
+
+            <!--<input type="text" name="information" class="whit" id="information" value="" placeholder="information" data-theme="a">-->
+
+            <button type="submit" id="forgot_btn" class="ui-btn butms" >Submit</button>
+           
+        </div>
+    </form>
+</div>
+<div data-role="footer"><!--footer-->
+  
+<marquee>LPA Tool by Service Center India</marquee>
+</div>  <!--footer end-->
+</div><!--main page end-->
+</body>
+</html>

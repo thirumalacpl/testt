@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<!--datepicker end-->
+<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>
+<link href='css/mobil.css' rel='stylesheet' type='text/css'>
+<style type="text/css">
+    input {
+      margin: 2em 0;
+    }
+  </style>
+  <link href="css/mobipick.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="demo/shCore.js"></script>
+  <script type="text/javascript" src="external/xdate.js"></script> 
+  <script type="text/javascript" src="js/mobipick.js"></script>
+
+</head>
+<body>
+<!--main page-->
+<div data-role="page" id="update_one">    
+
+<div data-role="navbar" data-grid="c" data-theme="e" class="fix">
+    <ul>
+        <li class="nav" ><a href="#" id="update_one_logo"><img src="images/logoa.png" class="im imj"></a></li>
+        <li class="nava foon2" id="update_one_employee_name">Employee Name</li>
+        <li class="navb foon2" id="update_one_employee_id">Personal ID</li>
+        <li class="navc"><a href="#overlayPanel_update_one">  <span><button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars babut"></button></span></a></li>
+    </ul>
+</div><!-- /navbar end-->  
+
+<!--panel slider-->
+<div data-role="panel" id="overlayPanel_update_one" data-display="overlay" data-position="right" data-dismissible="true" data-swipe-close="false"> 
+      <ul data-role="listview" data-inset="true">
+      <li><a href="#" id="update_one_profile" class="ui-btn ui-icon-carat-l ui-btn-icon-left"><span class="ww">My Profile</span></a></li>
+      <li><a href="#" id="update_one_create" class="ui-btn ui-icon-carat-l ui-btn-icon-left" ><span class="ww">Create LPA</span></a></li>
+      </ul>
+      <a href="#" id="update_one_signout" class="ui-btn ui-icon-power ui-btn-icon-left"><span class="ww si">Sign Out</span></a>
+</div> <!--page slider end-->
+
+<!--content page-->
+<div data-role="main" class="ui-content cin">
+  <script src="js/update_one.js"></script>
+    <script type="text/javascript" src="js/mobipick.js"></script>
+   <script type="text/javascript" src="external/xdate.js"></script> 
+
+<form id="lpa_update_form" method="post" data-ajax="false">
+
+<h3 class="ui-bar ui-bar-a texs" >Update LPA</h3>
+
+<label class="cen">Region</label>
+<select name="region" id="region" class="drof">
+    <option class="drfont" value="0">Select Region</option>
+</select>
+
+<label class="cen">Company</label>
+<select name="country" id="country" class="drof">
+    <option value="0">Select Country</option> 
+</select>
+
+<label class="cen">Location</label>
+<select name="find_plant" id="find_plant" class="drof">
+    <option value="0">Select Plant</option>
+</select>
+
+
+<div id="demo">
+<label class="">Date</label>
+<div class="demo">            
+<input type="text" name="find_datepicker"  id="find_datepicker" placeholder="Date" class="dar" />
+</div>
+</div>
+<br>
+<label class="cen">Shift</label>
+<select name="find_shift" id="find_shift" class="drof">
+    <option value="0">Select shift</option>
+    <option value="1">Shift1</option>
+    <option value="2">Shift2</option>
+    <option value="3">Shift3</option>
+</select>
+<br>
+</form>
+<div  id="first_div" ><!--next button-->
+<div class="cena">
+<button class="ui-btn butmmas" id="find_update1">Next</button>
+</div>
+<!--  <a href="#" class="cena ui-btn ui-corner-all ui-shadow but ui-state-persist ui-btn-active" id="find_update1">Find</a> -->
+ <h3 class="ui-bar ui-bar-a texsa " id="h3_up" style="display:none;">Parts</h3>
+ <br>
+<ul data-role="listview" style="display:none;" id="part_ui_list">
+    
+</ul><br>
+</div><!--next button end-->
+
+ <div  data-role="popup" id="popupsearch" data-transition="pop" data-overlay-theme="a" class="bam">
+      <p class="yellow">No Data Found for the search record</p>
+      <a href="#" data-rel="back"> <button type="submit"  class="ui-btn butms" >Ok</button></a>
+  </div>
+
+
+
+<div class="ui-grid-solo">
+<div class="ui-block-a">
+
+</div>
+</div>
+ <div  data-role="popup" id="Network" data-transition="pop" data-overlay-theme="a" class="bam">
+      <p class="yellow">Network error has occurred please try again!</p>
+      <a href="#" data-rel="back"> <button type="submitab"  class="ui-btn butms" >Ok</button></a>
+  </div>
+<div class="ui-grid-solo mru">
+<div class="ui-block-a">
+</div>
+</div>
+ <div  data-role="popup" id="popupsearchmade" data-transition="pop" data-overlay-theme="a" class="bam">
+      <p class="yellow">Data available for the search made</p>
+      <a href="#" data-rel="back"> <button type="submita"  class="ui-btn butms" >Ok</button></a>
+  </div>
+
+</div><!--content div end-->
+
+
+ 
+<div data-role="footer" class="fofi"><!--footer-->
+<marquee>LPA Tool by Service Center India</marquee>
+</div>  <!--footer end-->
+</div> <!---main div page-->
+</body>
+</html>
